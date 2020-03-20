@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B213FD52421F3DF00B7925F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B213FD42421F3DF00B7925F /* AppDelegate.m */; };
+		8B213FD82421F3DF00B7925F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B213FD72421F3DF00B7925F /* SceneDelegate.m */; };
+		8B213FDB2421F3DF00B7925F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B213FDA2421F3DF00B7925F /* ViewController.m */; };
+		8B213FDE2421F3DF00B7925F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B213FDC2421F3DF00B7925F /* Main.storyboard */; };
+		8B213FE02421F3E100B7925F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B213FDF2421F3E100B7925F /* Assets.xcassets */; };
+		8B213FE32421F3E100B7925F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B213FE12421F3E100B7925F /* LaunchScreen.storyboard */; };
+		8B213FE62421F3E100B7925F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B213FE52421F3E100B7925F /* main.m */; };
+		8B213FF02421F3E200B7925F /* ZBWAlbumUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B213FEF2421F3E200B7925F /* ZBWAlbumUITests.m */; };
+		8B213FFD2421FA2300B7925F /* ZBWPhotosManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B213FFC2421FA2300B7925F /* ZBWPhotosManager.m */; };
+		8B2140012421FA5800B7925F /* ZBWPhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2140002421FA5800B7925F /* ZBWPhotoManager.m */; };
+		8B2140042421FABE00B7925F /* ZBWPhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2140032421FABE00B7925F /* ZBWPhotoModel.m */; };
+		8B2140082421FED800B7925F /* ZBWAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2140072421FED800B7925F /* ZBWAlbumViewController.m */; };
+		8B21400B2423272900B7925F /* ZBWAlbumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B21400A2423272900B7925F /* ZBWAlbumModel.m */; };
+		8B21400F24232C0A00B7925F /* ZBWAlbumCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B21400E24232C0A00B7925F /* ZBWAlbumCollectionViewCell.m */; };
+		8B21401724234AD300B7925F /* ZBWAlbumTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B21401224234AD200B7925F /* ZBWAlbumTableViewCell.m */; };
+		8B21401824234AD300B7925F /* ZBWAlbumTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B21401424234AD200B7925F /* ZBWAlbumTableView.m */; };
+		8B21401924234AD300B7925F /* ZBWAlbumView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B21401524234AD200B7925F /* ZBWAlbumView.m */; };
+		8B21401E2424DFDF00B7925F /* UIColor+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B21401C2424DFDE00B7925F /* UIColor+Custom.m */; };
+		8B2140242424E71500B7925F /* ZBWButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2140232424E71500B7925F /* ZBWButton.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B213FEC2421F3E100B7925F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B213FC82421F3DF00B7925F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B213FCF2421F3DF00B7925F;
+			remoteInfo = ZBWAlbum;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8B213FD02421F3DF00B7925F /* ZBWAlbum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZBWAlbum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B213FD32421F3DF00B7925F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8B213FD42421F3DF00B7925F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8B213FD62421F3DF00B7925F /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		8B213FD72421F3DF00B7925F /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		8B213FD92421F3DF00B7925F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8B213FDA2421F3DF00B7925F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8B213FDD2421F3DF00B7925F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8B213FDF2421F3E100B7925F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B213FE22421F3E100B7925F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8B213FE42421F3E100B7925F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B213FE52421F3E100B7925F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8B213FEB2421F3E100B7925F /* ZBWAlbumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZBWAlbumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B213FEF2421F3E200B7925F /* ZBWAlbumUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBWAlbumUITests.m; sourceTree = "<group>"; };
+		8B213FF12421F3E200B7925F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B213FFB2421FA2300B7925F /* ZBWPhotosManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBWPhotosManager.h; sourceTree = "<group>"; };
+		8B213FFC2421FA2300B7925F /* ZBWPhotosManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBWPhotosManager.m; sourceTree = "<group>"; };
+		8B213FFF2421FA5800B7925F /* ZBWPhotoManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBWPhotoManager.h; sourceTree = "<group>"; };
+		8B2140002421FA5800B7925F /* ZBWPhotoManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBWPhotoManager.m; sourceTree = "<group>"; };
+		8B2140022421FABE00B7925F /* ZBWPhotoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBWPhotoModel.h; sourceTree = "<group>"; };
+		8B2140032421FABE00B7925F /* ZBWPhotoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBWPhotoModel.m; sourceTree = "<group>"; };
+		8B2140062421FED800B7925F /* ZBWAlbumViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBWAlbumViewController.h; sourceTree = "<group>"; };
+		8B2140072421FED800B7925F /* ZBWAlbumViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBWAlbumViewController.m; sourceTree = "<group>"; };
+		8B2140092423272900B7925F /* ZBWAlbumModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBWAlbumModel.h; sourceTree = "<group>"; };
+		8B21400A2423272900B7925F /* ZBWAlbumModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBWAlbumModel.m; sourceTree = "<group>"; };
+		8B21400D24232C0A00B7925F /* ZBWAlbumCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBWAlbumCollectionViewCell.h; sourceTree = "<group>"; };
+		8B21400E24232C0A00B7925F /* ZBWAlbumCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBWAlbumCollectionViewCell.m; sourceTree = "<group>"; };
+		8B21401124234AD200B7925F /* ZBWAlbumTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBWAlbumTableView.h; sourceTree = "<group>"; };
+		8B21401224234AD200B7925F /* ZBWAlbumTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBWAlbumTableViewCell.m; sourceTree = "<group>"; };
+		8B21401324234AD200B7925F /* ZBWAlbumView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBWAlbumView.h; sourceTree = "<group>"; };
+		8B21401424234AD200B7925F /* ZBWAlbumTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBWAlbumTableView.m; sourceTree = "<group>"; };
+		8B21401524234AD200B7925F /* ZBWAlbumView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBWAlbumView.m; sourceTree = "<group>"; };
+		8B21401624234AD200B7925F /* ZBWAlbumTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBWAlbumTableViewCell.h; sourceTree = "<group>"; };
+		8B21401B24249F6400B7925F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		8B21401C2424DFDE00B7925F /* UIColor+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Custom.m"; sourceTree = "<group>"; };
+		8B21401D2424DFDF00B7925F /* UIColor+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Custom.h"; sourceTree = "<group>"; };
+		8B2140222424E71500B7925F /* ZBWButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBWButton.h; sourceTree = "<group>"; };
+		8B2140232424E71500B7925F /* ZBWButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBWButton.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B213FCD2421F3DF00B7925F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B213FE82421F3E100B7925F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B213FC72421F3DF00B7925F = {
+			isa = PBXGroup;
+			children = (
+				8B213FD22421F3DF00B7925F /* ZBWAlbum */,
+				8B213FEE2421F3E100B7925F /* ZBWAlbumUITests */,
+				8B213FD12421F3DF00B7925F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8B213FD12421F3DF00B7925F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B213FD02421F3DF00B7925F /* ZBWAlbum.app */,
+				8B213FEB2421F3E100B7925F /* ZBWAlbumUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B213FD22421F3DF00B7925F /* ZBWAlbum */ = {
+			isa = PBXGroup;
+			children = (
+				8B213FFA2421FA0C00B7925F /* Album */,
+				8B213FD32421F3DF00B7925F /* AppDelegate.h */,
+				8B213FD42421F3DF00B7925F /* AppDelegate.m */,
+				8B213FD62421F3DF00B7925F /* SceneDelegate.h */,
+				8B213FD72421F3DF00B7925F /* SceneDelegate.m */,
+				8B213FD92421F3DF00B7925F /* ViewController.h */,
+				8B213FDA2421F3DF00B7925F /* ViewController.m */,
+				8B213FDC2421F3DF00B7925F /* Main.storyboard */,
+				8B213FDF2421F3E100B7925F /* Assets.xcassets */,
+				8B213FE12421F3E100B7925F /* LaunchScreen.storyboard */,
+				8B213FE42421F3E100B7925F /* Info.plist */,
+				8B213FE52421F3E100B7925F /* main.m */,
+			);
+			path = ZBWAlbum;
+			sourceTree = "<group>";
+		};
+		8B213FEE2421F3E100B7925F /* ZBWAlbumUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8B213FEF2421F3E200B7925F /* ZBWAlbumUITests.m */,
+				8B213FF12421F3E200B7925F /* Info.plist */,
+			);
+			path = ZBWAlbumUITests;
+			sourceTree = "<group>";
+		};
+		8B213FFA2421FA0C00B7925F /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				8B213FFB2421FA2300B7925F /* ZBWPhotosManager.h */,
+				8B213FFC2421FA2300B7925F /* ZBWPhotosManager.m */,
+				8B2140062421FED800B7925F /* ZBWAlbumViewController.h */,
+				8B2140072421FED800B7925F /* ZBWAlbumViewController.m */,
+				8B21401124234AD200B7925F /* ZBWAlbumTableView.h */,
+				8B21401424234AD200B7925F /* ZBWAlbumTableView.m */,
+				8B21401324234AD200B7925F /* ZBWAlbumView.h */,
+				8B21401524234AD200B7925F /* ZBWAlbumView.m */,
+				8B21401624234AD200B7925F /* ZBWAlbumTableViewCell.h */,
+				8B21401224234AD200B7925F /* ZBWAlbumTableViewCell.m */,
+				8B21400D24232C0A00B7925F /* ZBWAlbumCollectionViewCell.h */,
+				8B21400E24232C0A00B7925F /* ZBWAlbumCollectionViewCell.m */,
+				8B213FFF2421FA5800B7925F /* ZBWPhotoManager.h */,
+				8B2140002421FA5800B7925F /* ZBWPhotoManager.m */,
+				8B21401D2424DFDF00B7925F /* UIColor+Custom.h */,
+				8B21401C2424DFDE00B7925F /* UIColor+Custom.m */,
+				8B2140222424E71500B7925F /* ZBWButton.h */,
+				8B2140232424E71500B7925F /* ZBWButton.m */,
+				8B2140022421FABE00B7925F /* ZBWPhotoModel.h */,
+				8B2140032421FABE00B7925F /* ZBWPhotoModel.m */,
+				8B2140092423272900B7925F /* ZBWAlbumModel.h */,
+				8B21400A2423272900B7925F /* ZBWAlbumModel.m */,
+			);
+			path = Album;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B213FCF2421F3DF00B7925F /* ZBWAlbum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B213FF42421F3E200B7925F /* Build configuration list for PBXNativeTarget "ZBWAlbum" */;
+			buildPhases = (
+				8B213FCC2421F3DF00B7925F /* Sources */,
+				8B213FCD2421F3DF00B7925F /* Frameworks */,
+				8B213FCE2421F3DF00B7925F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZBWAlbum;
+			productName = ZBWAlbum;
+			productReference = 8B213FD02421F3DF00B7925F /* ZBWAlbum.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8B213FEA2421F3E100B7925F /* ZBWAlbumUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B213FF72421F3E200B7925F /* Build configuration list for PBXNativeTarget "ZBWAlbumUITests" */;
+			buildPhases = (
+				8B213FE72421F3E100B7925F /* Sources */,
+				8B213FE82421F3E100B7925F /* Frameworks */,
+				8B213FE92421F3E100B7925F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B213FED2421F3E100B7925F /* PBXTargetDependency */,
+			);
+			name = ZBWAlbumUITests;
+			productName = ZBWAlbumUITests;
+			productReference = 8B213FEB2421F3E100B7925F /* ZBWAlbumUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B213FC82421F3DF00B7925F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = com.bw;
+				TargetAttributes = {
+					8B213FCF2421F3DF00B7925F = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					8B213FEA2421F3E100B7925F = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 8B213FCF2421F3DF00B7925F;
+					};
+				};
+			};
+			buildConfigurationList = 8B213FCB2421F3DF00B7925F /* Build configuration list for PBXProject "ZBWAlbum" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B213FC72421F3DF00B7925F;
+			productRefGroup = 8B213FD12421F3DF00B7925F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B213FCF2421F3DF00B7925F /* ZBWAlbum */,
+				8B213FEA2421F3E100B7925F /* ZBWAlbumUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B213FCE2421F3DF00B7925F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B213FE32421F3E100B7925F /* LaunchScreen.storyboard in Resources */,
+				8B213FE02421F3E100B7925F /* Assets.xcassets in Resources */,
+				8B213FDE2421F3DF00B7925F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B213FE92421F3E100B7925F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B213FCC2421F3DF00B7925F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B21400F24232C0A00B7925F /* ZBWAlbumCollectionViewCell.m in Sources */,
+				8B2140042421FABE00B7925F /* ZBWPhotoModel.m in Sources */,
+				8B2140242424E71500B7925F /* ZBWButton.m in Sources */,
+				8B21401724234AD300B7925F /* ZBWAlbumTableViewCell.m in Sources */,
+				8B213FDB2421F3DF00B7925F /* ViewController.m in Sources */,
+				8B213FFD2421FA2300B7925F /* ZBWPhotosManager.m in Sources */,
+				8B213FD52421F3DF00B7925F /* AppDelegate.m in Sources */,
+				8B21401E2424DFDF00B7925F /* UIColor+Custom.m in Sources */,
+				8B213FE62421F3E100B7925F /* main.m in Sources */,
+				8B21400B2423272900B7925F /* ZBWAlbumModel.m in Sources */,
+				8B2140012421FA5800B7925F /* ZBWPhotoManager.m in Sources */,
+				8B21401824234AD300B7925F /* ZBWAlbumTableView.m in Sources */,
+				8B21401924234AD300B7925F /* ZBWAlbumView.m in Sources */,
+				8B2140082421FED800B7925F /* ZBWAlbumViewController.m in Sources */,
+				8B213FD82421F3DF00B7925F /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B213FE72421F3E100B7925F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B213FF02421F3E200B7925F /* ZBWAlbumUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B213FED2421F3E100B7925F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B213FCF2421F3DF00B7925F /* ZBWAlbum */;
+			targetProxy = 8B213FEC2421F3E100B7925F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8B213FDC2421F3DF00B7925F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B213FDD2421F3DF00B7925F /* Base */,
+				8B21401B24249F6400B7925F /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8B213FE12421F3E100B7925F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B213FE22421F3E100B7925F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8B213FF22421F3E200B7925F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8B213FF32421F3E200B7925F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B213FF52421F3E200B7925F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S9L649M8P6;
+				INFOPLIST_FILE = ZBWAlbum/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bw.ZBWAlbum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8B213FF62421F3E200B7925F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S9L649M8P6;
+				INFOPLIST_FILE = ZBWAlbum/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bw.ZBWAlbum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8B213FF82421F3E200B7925F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZBWAlbumUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bw.ZBWAlbumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZBWAlbum;
+			};
+			name = Debug;
+		};
+		8B213FF92421F3E200B7925F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZBWAlbumUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bw.ZBWAlbumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZBWAlbum;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B213FCB2421F3DF00B7925F /* Build configuration list for PBXProject "ZBWAlbum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B213FF22421F3E200B7925F /* Debug */,
+				8B213FF32421F3E200B7925F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B213FF42421F3E200B7925F /* Build configuration list for PBXNativeTarget "ZBWAlbum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B213FF52421F3E200B7925F /* Debug */,
+				8B213FF62421F3E200B7925F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B213FF72421F3E200B7925F /* Build configuration list for PBXNativeTarget "ZBWAlbumUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B213FF82421F3E200B7925F /* Debug */,
+				8B213FF92421F3E200B7925F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B213FC82421F3DF00B7925F /* Project object */;
+}
