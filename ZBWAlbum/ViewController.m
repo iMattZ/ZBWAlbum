@@ -35,6 +35,9 @@
 }
 
 
+
+
+
 #pragma mark - UICollectionViewDataSource / UICollectionViewDelegate
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return self.array.count;
@@ -61,17 +64,13 @@
         layout.scrollDirection = UICollectionViewScrollDirectionVertical;
         layout.minimumLineSpacing = 5.f;
         layout.minimumInteritemSpacing = 5.f;
-        
-        
         _albumCollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 200) collectionViewLayout:layout];
         _albumCollectionView.delegate = self;
         _albumCollectionView.dataSource = self;
         _albumCollectionView.backgroundColor = [UIColor whiteColor];
         _albumCollectionView.scrollEnabled = YES;
         _albumCollectionView.alwaysBounceVertical = YES;
-        
         [_albumCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"ddd"];
-        
         [self.view addSubview:_albumCollectionView];
     }
     

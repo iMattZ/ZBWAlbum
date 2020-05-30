@@ -109,9 +109,12 @@
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
         
         // 获得个人收藏相册
+        /*
         PHFetchResult<PHAssetCollection *> *favoritesCollection = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeSmartAlbum subtype:PHAssetCollectionSubtypeSmartAlbumFavorites options:nil];
         // 获得相机胶卷
         PHFetchResult<PHAssetCollection *> *assetCollections = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeAlbum subtype:PHAssetCollectionSubtypeSmartAlbumUserLibrary options:nil];
+         
+         */
         // 获得全部相片
         PHFetchResult<PHAssetCollection *> *cameraRolls = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeSmartAlbum subtype:PHAssetCollectionSubtypeSmartAlbumUserLibrary options:nil];
         
@@ -248,6 +251,10 @@
     _albumModel = albumModel;
     [self.showAlbumButton setTitle:albumModel.collectionTitle forState:UIControlStateNormal];
     [self.albumCollectionView reloadData];
+    if (albumModel.assets.count > 0) {
+        [_albumCollectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:0] atScrollPosition:UICollectionViewScrollPositionTop animated:NO];
+    }
+    
 }
 
 
@@ -414,7 +421,7 @@ static NSString *albumCollectionViewCell = @"ZBWAlbumCollectionViewCell";
         _albumCollectionView.backgroundColor = [UIColor whiteColor];
         _albumCollectionView.scrollEnabled = YES;
         _albumCollectionView.alwaysBounceVertical = YES;
-        [_albumCollectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:0] atScrollPosition:UICollectionViewScrollPositionTop animated:YES];
+//        [_albumCollectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:0] atScrollPosition:UICollectionViewScrollPositionTop animated:YES];
         
         [_albumCollectionView registerClass:[ZBWAlbumCollectionViewCell class] forCellWithReuseIdentifier:albumCollectionViewCell];
         
