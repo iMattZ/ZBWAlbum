@@ -23,4 +23,5 @@
 ```
 
 ## 三、Release Notes 更新
+1.0.1 修复bug-滚动崩溃的问题 & ZBWAlbumViewController.m强引用的问题
 1.0.0 仿照微信图片上传的基础功能

@@ -299,7 +299,7 @@ static NSString *albumCollectionViewCell = @"ZBWAlbumCollectionViewCell";
             
             for (int i = 0; i < [ZBWPhotoManager standardPhotoManger].photoModelList.count; i++) {
                 ZBWPhotoModel *model = [ZBWPhotoManager standardPhotoManger].photoModelList[i];
-                if ([model.beLongTitle isEqualToString:self.albumModel.collectionTitle]) {
+                if ([model.beLongTitle isEqualToString:weakSelf.albumModel.collectionTitle]) {
                     if ([model.beLongTitle isEqualToString:weakSelf.albumModel.collectionTitle] && model.row == indexPath.row) {
                         [[ZBWPhotoManager standardPhotoManger].photoModelList removeObject:model];
                     }
@@ -317,7 +317,7 @@ static NSString *albumCollectionViewCell = @"ZBWAlbumCollectionViewCell";
             
             
             ZBWPhotoModel *photo = [[ZBWPhotoModel alloc]init];
-            photo.beLongTitle = self.albumModel.collectionTitle;
+            photo.beLongTitle = weakSelf.albumModel.collectionTitle;
             photo.row = indexPath.row;
             photo.asset = asset;
             [[ZBWPhotoManager standardPhotoManger].photoModelList addObject:photo];
@@ -332,24 +332,9 @@ static NSString *albumCollectionViewCell = @"ZBWAlbumCollectionViewCell";
         
         if (isReloadCollectionView) {
             
-//            if ([ZBWPhotoManager standardPhotoManger].choiceCount == [ZBWPhotoManager standardPhotoManger].maxCount) {
-//                [weakSelf.albumCollectionView reloadData];
-//                return;
-//            }
-            
-            NSLog(@"1111");
             
             [weakSelf.albumCollectionView reloadData];
             
-//            NSMutableArray <NSIndexPath*> *indexArray = [NSMutableArray array];
-//            for (int i = 0; i < [ZBWPhotoManager standardPhotoManger].photoModelList.count; i++) {
-//                ZBWPhotoModel *model = [ZBWPhotoManager standardPhotoManger].photoModelList[i];
-//                NSIndexPath *indexPath = [NSIndexPath indexPathForRow:model.row inSection:0];
-//                [indexArray addObject:indexPath];
-//            }
-//            [indexArray addObject:[NSIndexPath indexPathForRow:indexPath.row inSection:0]];
-//            [weakSelf.albumCollectionView reloadItemsAtIndexPaths:indexArray];
-            NSLog(@"222");
         } else {
             weakCell.isSelect = [weakSelf.albumModel.selectRows containsObject:@(indexPath.row)];
         }
